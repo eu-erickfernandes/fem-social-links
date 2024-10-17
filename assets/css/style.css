@@ -1,0 +1,60 @@
+/* TYPOGRAPHY */
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body, 
+body *{
+    font-family: 'Inter';
+    font-size: .875rem;
+}
+
+/* COLORS */
+:root{
+    --clr-green: hsl(75, 94%, 57%);
+    
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+/* LAYOUT */
+body{
+    align-items: center;
+    background-color: var(--clr-grey-900);
+    display: flex;
+    height: 100dvh;
+    justify-content: center;
+}
+
+main{
+    align-items: center;
+    background-color: var(--clr-grey-800);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    color: var(--clr-white);
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    max-width: 24rem;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+.link-list{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+
+    a{
+        background-color: var(--clr-grey-700);
+        border-radius: .5rem;
+        color: inherit;
+        padding: 1rem;
+    }
+}
