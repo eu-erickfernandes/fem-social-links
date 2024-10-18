@@ -15,8 +15,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### My results
-
-
+![Group 1](https://github.com/user-attachments/assets/38535106-47c9-434b-9e81-6b5cd32a069b)
 
 ### Built with
 
