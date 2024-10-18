@@ -92,6 +92,7 @@ main{
 .attribution{
     background-color: var(--clr-white);
     border-radius: .5rem;
+    box-sizing: border-box;
     color: var(--clr-grey-800);
     display: grid;
     font-weight: 700;
@@ -116,6 +117,12 @@ main{
     main{
         padding: 1.5rem;
     }
+    
+    .attribution{
+        position: static;
+        max-width: 24rem;
+        width: 100%;
+    } 
 }
 
 @media screen and (width <= 360px) {
@@ -132,5 +139,7 @@ main{
 @media screen and (width <= 912px) and (height <= 820px) {
     .attribution{
         position: static;
+        max-width: 24rem;
+        width: 100%;
     } 
 }
