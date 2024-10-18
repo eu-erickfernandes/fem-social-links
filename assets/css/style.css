@@ -22,6 +22,7 @@ body *{
 body{
     align-items: center;
     background-color: var(--clr-grey-900);
+    box-sizing: border-box;
     display: flex;
     height: 100dvh;
     justify-content: center;
@@ -34,7 +35,7 @@ main{
     box-sizing: border-box;
     color: var(--clr-white);
     display: grid;
-    gap: 1rem;
+    gap: 1.75rem;
     justify-items: center;
     max-width: 24rem;
     padding: 2.5rem;
@@ -42,8 +43,30 @@ main{
     width: 100%;
 }
 
-.name{
-    font-size: 1.5rem;
+.avatar{
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    width: 6rem;
+}
+
+.info-quote{
+    display: grid;
+    gap: 2rem;
+
+    .info{
+        display: grid;
+        gap: 1rem;
+
+        .name{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .location{
+            color: var(--clr-green);
+            font-weight: 700;
+        }
+    }
 }
 
 .link-list{
@@ -55,6 +78,24 @@ main{
         background-color: var(--clr-grey-700);
         border-radius: .5rem;
         color: inherit;
+        font-weight: 700;
         padding: 1rem;
+
+        &:hover{
+            background-color: var(--clr-green);
+            color: var(--clr-grey-800);
+        }
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (width <= 475px) {
+    body {
+        padding-block: 7rem;
+        padding-inline: 1.5rem;
+    }
+
+    main{
+        padding: 1.5rem;
     }
 }
