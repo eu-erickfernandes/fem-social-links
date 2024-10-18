@@ -24,8 +24,10 @@ body{
     background-color: var(--clr-grey-900);
     box-sizing: border-box;
     display: flex;
-    height: 100dvh;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: center;
+    min-height: 100dvh;
 }
 
 main{
@@ -77,7 +79,6 @@ main{
     a{
         background-color: var(--clr-grey-700);
         border-radius: .5rem;
-        color: inherit;
         font-weight: 700;
         padding: 1rem;
 
@@ -85,6 +86,23 @@ main{
             background-color: var(--clr-green);
             color: var(--clr-grey-800);
         }
+    }
+}
+
+.attribution{
+    background-color: var(--clr-white);
+    border-radius: .5rem;
+    color: var(--clr-grey-800);
+    display: grid;
+    font-weight: 700;
+    gap: .5rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem;
+
+    a{
+        text-decoration: underline;
     }
 }
 
@@ -98,4 +116,21 @@ main{
     main{
         padding: 1.5rem;
     }
+}
+
+@media screen and (width <= 360px) {
+    body {
+        padding-block: 2rem;
+        padding-inline: 1.5rem;
+    }
+
+    main{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (width <= 912px) and (height <= 820px) {
+    .attribution{
+        position: static;
+    } 
 }
